@@ -62,12 +62,12 @@ lastlog                                  # wanneer heeft iedere gebruiker voor h
 last                                     # login-geschiedenis
 ```
 
-Uitleg regel `/etc/passwd`:
+Uitleg regel `/etc/passwd` (zo stond het in de proeftoets):
 ```
-salmademirci:x:1002:1002:Salma Demirci,,,:/home/salmademirci:/bin/bash
-  naam      ww uid  gid  volledige naam    homemap          shell
+salmademirci:x:1003:1003::/home/salmademirci:/bin/sh
+  naam      ww uid  gid  (naamveld leeg)  homemap   shell
 ```
-- Kijk naar de **volledige naam** (5e veld): klopt die met het interview? (Salma *Demirci* ≠ Salma *Aslan* → afwijking)
+- Kijk naar de **gebruikersnaam** en het naamveld (5e veld, vaak leeg): klopt het met het interview? (salma*demirci* ≠ Salma *Aslan* → afwijking)
 - Shell `/usr/sbin/nologin` of `/bin/false` = kan niet inloggen op de shell.
 - Gebruiker die **niet op de lijst** staat (bv. `bramburg`, `gast`) → afwijking.
 
